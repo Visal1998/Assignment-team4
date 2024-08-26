@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Later - Magazine YouTube Channel</title>
+    <link rel="stylesheet" href="watch-later.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Magazine Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="user-menu">
+                <a href="#"><i class="fa fa-user-circle"></i></a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+               
+                <li><a href="#">Watch Later</a></li>
+                
+        </nav>
+    </header>
+    <main>
+        <section class="video-list">
+            <div class="video-card">
+                <img src="54.png" alt="Video Thumbnail 1">
+                <div class="video-info">
+                    <h3>I Surprised MrBeast With Custom iPhones!</h3>
+                    <button onclick="addToWatchLater('I Surprised MrBeast With Custom iPhones!', '54.png')">Watch Later</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="55.png" alt="Video Thumbnail 2">
+                <div class="video-info">
+                    <h3>Testing a $13,000 Hasselblad Camera</h3>
+                    <button onclick="addToWatchLater('Testing a $13,000 Hasselblad Camera', '55.png')">Watch Later</button>
+                </div>
+            </div>
+            <!-- Repeat video-cards for more videos -->
+            <div class="video-card">
+                <img src="57.png" alt="Video Thumbnail 2">
+                <div class="video-info">
+                    <h3>ROG Ally X Review: The Ultimate Gaming Handheld?</h3>
+                    <button onclick="addToWatchLater('ROG Ally X Review: The Ultimate Gaming Handheld?', '55.png')">Watch Later</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="56.png" alt="Video Thumbnail 4">
+                <div class="video-info">
+                    <h3>I Bought 100 Amazon Returned Packages</h3>
+                    <button onclick="addToWatchLater('I Bought 100 Amazon Returned Packages', '55.png')">Watch Later</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="watch-later">
+            <h2>Watch Later</h2>
+            <div id="watch-later-list"></div>
+        </section>
+    </main>
+
+    <script src="watch-later.js"></script>
+</body>
+</html>
